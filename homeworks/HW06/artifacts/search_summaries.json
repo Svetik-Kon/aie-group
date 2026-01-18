@@ -1,0 +1,23 @@
+{
+  "DecisionTree": {
+    "best_params": {
+      "max_depth": 8
+    },
+    "best_cv_score": 0.8155220353367303,
+    "refit_metric": "roc_auc"
+  },
+  "RandomForest": {
+    "best_params": {
+      "max_depth": null
+    },
+    "best_cv_score": 0.9272940503067755,
+    "refit_metric": "roc_auc"
+  },
+  "GradientBoosting": {
+    "best_params": {
+      "max_depth": 8
+    },
+    "best_cv_score": 0.9306820041385105,
+    "refit_metric": "roc_auc"
+  }
+}
