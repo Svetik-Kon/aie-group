@@ -1,14 +1,47 @@
-[
-  {
-    "model": "RandomForest",
-    "accuracy": 0.8913333333333333,
-    "f1": 0.7565953210552514,
-    "roc_auc": 0.9293588068567185
+{
+  "meta": {
+    "schema_version": 1,
+    "created_at": "2026-01-23T20:17:12.134127+00:00",
+    "dataset_path": "S06-hw-dataset-02.csv",
+    "test_size": 0.25,
+    "random_state": 42,
+    "selection_criterion": [
+      "roc_auc",
+      "f1",
+      "accuracy"
+    ],
+    "n_models": 5
   },
-  {
-    "model": "DecisionTree",
-    "accuracy": 0.8244444444444444,
-    "f1": 0.6131243878550441,
-    "roc_auc": 0.8314200907932836
-  }
-]
+  "results": [
+    {
+      "model": "Boosting",
+      "accuracy": 0.9086666666666666,
+      "f1": 0.8091035764050163,
+      "roc_auc": 0.9327416267112983
+    },
+    {
+      "model": "RandomForest",
+      "accuracy": 0.8913333333333333,
+      "f1": 0.7565953210552514,
+      "roc_auc": 0.9293588068567185
+    },
+    {
+      "model": "DecisionTree",
+      "accuracy": 0.8244444444444444,
+      "f1": 0.6131243878550441,
+      "roc_auc": 0.8314200907932836
+    },
+    {
+      "model": "LogisticRegression",
+      "accuracy": 0.8162222222222222,
+      "f1": 0.5717244950802693,
+      "roc_auc": 0.8008904412072182
+    },
+    {
+      "model": "DummyClassifier",
+      "accuracy": 0.7373333333333333,
+      "f1": 0.0,
+      "roc_auc": 0.5
+    }
+  ]
+}
