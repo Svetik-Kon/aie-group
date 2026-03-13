@@ -1,0 +1,24 @@
+{
+  "experiment_id": "E4",
+  "dataset": "EMNIST",
+  "seed": 42,
+  "model_config": {
+    "input_dim": 784,
+    "num_classes": 47,
+    "hidden_sizes": [
+      512,
+      256,
+      128
+    ],
+    "activation_name": "relu",
+    "dropout": 0.0,
+    "use_batchnorm": true
+  },
+  "optimizer": "Adam",
+  "lr": 0.001,
+  "momentum": 0.0,
+  "weight_decay": 0.0,
+  "early_stopping_patience": 4,
+  "test_loss": 0.4594225280081972,
+  "test_accuracy": 0.8473404255319149
+}
