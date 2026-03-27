@@ -1,0 +1,14 @@
+{
+  "dataset": "STL10",
+  "seed": 42,
+  "best_experiment_id": "C4",
+  "architecture": {
+    "arch": "ResNet18",
+    "mode": "layer4+fc",
+    "pretrained": true
+  },
+  "batch_size": 64,
+  "img_size": 96,
+  "criterion": "CrossEntropyLoss",
+  "device": "cpu"
+}

@@ -1,0 +1,7 @@
+experiment_id,task,dataset,seed,model_summary,optimizer,lr,epochs_trained,best_val_accuracy,test_accuracy,precision,recall,mean_iou,notes
+C1,classification,STL10,42,SimpleCNN base,Adam,0.001,8,0.552,,,,,No augmentations
+C2,classification,STL10,42,SimpleCNN with augmentations,Adam,0.001,8,0.529,,,,,RandomHorizontalFlip + RandomCrop + ColorJitter
+C3,classification,STL10,42,"ResNet18 pretrained, head-only",Adam,0.001,6,0.933,,,,,"Backbone frozen, only fc trained"
+C4,classification,STL10,42,"ResNet18 pretrained, layer4+fc finetune",Adam,0.0001,6,0.946,0.947875,,,,Partial finetuning of layer4 + fc
+V1,segmentation,Pascal VOC 2012,42,DeepLabV3_ResNet50 pretrained,,,0,,,0.9177701035493815,0.845095516671283,0.7831704742306224,Foreground = all non-background classes; base mask
+V2,segmentation,Pascal VOC 2012,42,DeepLabV3_ResNet50 pretrained,,,0,,,0.9181006526881859,0.8442507092734282,0.7826608340500826,Foreground = all non-background classes; remove small components
