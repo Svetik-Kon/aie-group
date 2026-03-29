@@ -10,5 +10,8 @@
   "batch_size": 64,
   "img_size": 96,
   "criterion": "CrossEntropyLoss",
-  "device": "cpu"
+  "device": "cpu",
+  "transforms": "Resize96_ToTensor_NormalizeSTL10",
+  "preprocess": "ResNet18Weights_DEFAULT_ImageNet_preprocess",
+  "augmentation": false
 }
